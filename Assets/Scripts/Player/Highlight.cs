@@ -159,7 +159,7 @@ public class Highlight : MonoBehaviour {
                 
                 //*
                 // Atualize a transparência do material do objeto de destaque para criar um efeito de piscar.
-                ColorUpdate();
+                ColorUpdate2();
                 //*/
             }
         }
@@ -167,6 +167,21 @@ public class Highlight : MonoBehaviour {
             // Desative o objeto de destaque se o raio não atingir nenhum objeto.
             highlight.SetActive(false);          
         }
+    }
+
+    // Adicione a malha ao MeshFilter e defina o material do MeshRenderer.
+    private void MeshRenderer() {
+        // Defina os vértices e triângulos da malha.
+        highlighMesh.vertices = vertices.ToArray();
+        highlighMesh.triangles = triangles.ToArray();
+        highlighMesh.uv = uv.ToArray();
+
+        // Recalcule as normais da malha e otimize-a.
+        highlighMesh.RecalculateNormals();
+        highlighMesh.Optimize();
+
+        // Adicione a malha ao MeshFilter do seu GameObject
+        meshFilter.mesh = highlighMesh;
     }
 
     // Gere a malha para o objeto de destaque.
@@ -178,20 +193,6 @@ public class Highlight : MonoBehaviour {
         VerticesAdd(HighlighSide.BOTTOM);
         VerticesAdd(HighlighSide.FRONT);
         VerticesAdd(HighlighSide.BACK);
-    }
-
-    // Adicione a malha ao MeshFilter e defina o material do MeshRenderer.
-    private void MeshRenderer() {
-        // Defina os vértices e triângulos da malha.
-        highlighMesh.vertices = vertices.ToArray();
-        highlighMesh.triangles = triangles.ToArray();
-
-        // Recalcule as normais da malha e otimize-a.
-        highlighMesh.RecalculateNormals();
-        highlighMesh.Optimize();
-
-        // Adicione a malha ao MeshFilter do seu GameObject
-        meshFilter.mesh = highlighMesh;
     }
 
     // Adicione os vértices da malha para o lado especificado do objeto de destaque.

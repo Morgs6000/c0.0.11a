@@ -526,7 +526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlight: {fileID: 1272571320}
   material: {fileID: 2100000, guid: ec2054053e29658439c20fc0eb217677, type: 2}
-  terrainMaterial: {fileID: 2100000, guid: 41c2283a2bb2e8c429537fc86b3d8222, type: 2}
+  terrainMaterial: {fileID: 2100000, guid: 460c09a80527dd24688964afc561f85c, type: 2}
   selectedBlock: {fileID: 635853554}
   cam: {fileID: 426286025}
   groundMask:
