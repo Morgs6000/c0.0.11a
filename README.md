@@ -28,10 +28,6 @@ Controles
 - Alteradoa a resolução do jogo de 1024x768 para 640x480.
 
 ## Técnico
-### Jogabilidade
-Controles
-- Mudou o código de aparencia do mouse.
-
 ### Geral
 Tela de depuração
 - Número da versão
@@ -46,7 +42,6 @@ Fonte
   - Filenme: **default.gif**.
 
 ## Referencias
-- https://minecraft.wiki/w/Java_Edition_Classic_mc-161616
 - https://minecraft.wiki/w/Java_Edition_Classic_0.0.2a
 - https://minecraft.wiki/w/Java_Edition_Classic_0.0.3a
 - https://minecraft.wiki/w/Java_Edition_Classic_0.0.9a
