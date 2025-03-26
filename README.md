@@ -2,7 +2,7 @@
  
 Este projeto tem como objetivo recriar o Minecraft usando a linguagem C# e a biblioteca OpenTK.
 
-Este é uma continuação da rd-160052:
+Este é uma continuação da rd-161348:
 - https://github.com/Morgs6000/rd-161348
 
 ## Ferramentas e Tecnologias
